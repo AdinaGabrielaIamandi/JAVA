@@ -1,35 +1,31 @@
 package homework;
 
 public class SIM {
-	long numero;
+	String numero;
 	int credito= 0;
-	long chiamate[] = new long [5];
+	String chiamate[] = new String [5];
+	private String chiamata;
 	
 	
-	public SIM(int a) {
+	public SIM(String a) {
 		this.numero= a;
 	}
 	
-	public long[] chiama(int numChiamato, int durataChiamata) {
-		long[] chiamata = {numChiamato, durataChiamata};
-		this.credito = this.credito -1;for(int i=0 ; i<chiamate.lenght ; i++) {
-		chiamate[i] = chiamata
+	public String chiama(String numChiamato, String durataChiamata) {
+		this.chiamata = numChiamato;
+		this.credito -= 1;
+		return this.chiamata;
 	}
-		return chiamata;
-	}
+	
+	
 	
 	public int riarica(int euro) {
-		return credito = euro;
+		return this.credito += euro;
 	}
-	
-	
 	
 	public static void stampaInfoSim(SIM s) {
 		System.out.println("Il tuo numero" + s.numero);
 		System.out.println("Le tue ultime 5 chiamate");
-		for (int i=0 ; i<5 ; i++) {
-			System.out.println("Numero: " + s.chiamate.);
-		}
 	}
 
 }
