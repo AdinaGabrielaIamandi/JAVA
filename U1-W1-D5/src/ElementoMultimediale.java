@@ -1,7 +1,7 @@
 
 public class ElementoMultimediale {
-	public String titolo;
-	public int durata;
+	protected String titolo;
+	protected int durata;
 	
 	public ElementoMultimediale(String titolo, int durata) {
 		this.titolo = titolo;

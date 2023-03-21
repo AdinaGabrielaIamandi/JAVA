@@ -1,5 +1,5 @@
 
-public abstract class RegistrazioneAudio extends ElementoMultimediale implements Riproducibile{
+abstract class RegistrazioneAudio extends ElementoMultimediale implements Riproducibile{
 	private int volume;
 	
 	public RegistrazioneAudio(String titolo, int durata, int volume) {
