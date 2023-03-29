@@ -19,7 +19,7 @@ public class Evento {
 	private String descrizione;
 	
 	@Column(name = "tipo_evento")
-	private String tipoEvento;
+	private TipoEvento tipoEvento;
 	
 	@Column(name = "numero_massimo_partecipanti")
 	private Integer numeroMassimoPartecipanti;
@@ -48,11 +48,11 @@ public class Evento {
 		this.descrizione = descrizione;
 	}
 
-	public String getTipoEvento() {
+	public TipoEvento getTipoEvento() {
 		return tipoEvento;
 	}
 
-	public void setTipoEvento(String tipoEvento) {
+	public void setTipoEvento(TipoEvento tipoEvento) {
 		this.tipoEvento = tipoEvento;
 	}
 
