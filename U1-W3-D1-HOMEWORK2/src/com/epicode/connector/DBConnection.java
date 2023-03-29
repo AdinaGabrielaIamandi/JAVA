@@ -74,5 +74,7 @@ public class DBConnection {
 				+ "WHERE id_student = " + s.getId();
 		this.st.executeUpdate(sql);
 	}
+	
+	
 
 }
