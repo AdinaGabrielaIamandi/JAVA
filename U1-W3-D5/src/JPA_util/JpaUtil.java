@@ -9,10 +9,10 @@ public class JpaUtil {
 		
 	static {
 		try {
-			emf = Persistence.createEntityManagerFactory("U1-W3-D2");	
+			emf = Persistence.createEntityManagerFactory("U1-W3-D5");	
 		} catch (Throwable ex) {
 			System.err.println("Initial EntityManagerFactory creation failed." + ex);
-			throw new ExceptionInInitializerError(ex);	
+			throw new ExceptionInInitializerError(ex);
 		}
 	}
 		
