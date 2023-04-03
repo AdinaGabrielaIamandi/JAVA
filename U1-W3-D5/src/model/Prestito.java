@@ -56,7 +56,7 @@ public class Prestito {
 	}
 	
 	public void setRestituzionePrevista(LocalDate restituzionePrevista) {
-		this.restituzionePrevista = restituzionePrevista;
+		this.restituzionePrevista = restituzionePrevista.plusDays(30);
 	}
 	
 	public LocalDate getRestituzioneEffettiva() {
