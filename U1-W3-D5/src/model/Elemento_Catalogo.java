@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -15,6 +16,10 @@ import javax.persistence.Table;
 @Table(name = "elementi_catalogo")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "tipo_elemento", discriminatorType = DiscriminatorType.STRING)
+@NamedQuery(name = "ElementoByISBN", query = "SELECT el FROM Elemento_Catalogo el WHERE el.codiceISBN = :codice")
+@NamedQuery(name = "RimuoviByISBN", query = "DELETE Elemento_Catalogo el WHERE el.codiceISBN = :codice")
+@NamedQuery(name = "ElementiByAnno", query = "SELECT el FROM Elemento_Catalogo el WHERE el.annoPubblicazione = :anno")
+@NamedQuery(name = "ElementoByTitolo", query = "SELECT el FROM Elemento_Catalogo el WHERE el.titolo = :tit")
 public abstract class Elemento_Catalogo {
 	
 	@Id

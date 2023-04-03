@@ -1,9 +1,11 @@
 package model;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.NamedQuery;
 
 @Entity
 @DiscriminatorValue("Libro")
+@NamedQuery(name = "LibriByAutore", query = "SELECT l FROM Libro l WHERE l.autore = :au")
 public class Libro extends Elemento_Catalogo{
 	
 	private String autore;
