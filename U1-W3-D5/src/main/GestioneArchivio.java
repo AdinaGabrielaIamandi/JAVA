@@ -35,7 +35,7 @@ public class GestioneArchivio {
 		Prestito p = new Prestito();
 		p.setElemento(l);
 		p.setUtente(u);
-		p.setInizioPrestito(25-02-2023);
+		p.setInizioPrestito(2023/02/05);
 		
 		//Archivio.aggiungiUtente(u);
 		//Archivio.aggiungiLibro(l);
