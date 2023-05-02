@@ -1,5 +1,5 @@
 
-abstract class RegistrazioneAudio extends ElementoMultimediale implements Riproducibile{
+public class RegistrazioneAudio extends ElementoMultimediale implements Riproducibile{
 	private int volume;
 	
 	public RegistrazioneAudio(String titolo, int durata, int volume) {
@@ -29,4 +29,10 @@ abstract class RegistrazioneAudio extends ElementoMultimediale implements Riprod
 			  System.out.println(titolo);
 		  }
 	  }
+
+	@Override
+	public void abbasaVolume() {
+		// TODO Auto-generated method stub
+		
+	}
 }

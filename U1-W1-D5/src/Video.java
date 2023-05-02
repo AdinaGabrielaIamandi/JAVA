@@ -1,5 +1,5 @@
 
-abstract class Video extends ElementoMultimediale implements Riproducibile {
+public class Video extends ElementoMultimediale implements Riproducibile {
 	private int volume;
 	private int luminosita;
 	
@@ -44,5 +44,11 @@ abstract class Video extends ElementoMultimediale implements Riproducibile {
 			}
 			System.out.println(titolo);
 		}
+	}
+
+	@Override
+	public void abbasaVolume() {
+		// TODO Auto-generated method stub
+		
 	}
 }
